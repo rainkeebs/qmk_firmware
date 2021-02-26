@@ -38,22 +38,26 @@
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-/* key combination for command */
-#define IS_COMMAND() ( \
-    keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
-)
-
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
 
 #define RGBLIGHT_LIMIT_VAL 100
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 100
 #define RGB_DI_PIN E6
+#define DRIVER_LED_TOTAL 61
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 61
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #endif
+
+#define RGB_DISABLE_WHEN_USB_SUSPENDED true
+#define RGB_MATRIX_KEYPRESSES // reacts to keypresses
+#define RGB_DISABLE_TIMEOUT 300000 // number of milliseconds to wait until rgb automatically turns off
+#define RGB_MATRIX_STARTUP_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
+#define RGB_MATRIX_STARTUP_SPD 100 // Sets the default animation speed, if none has been set
+#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+
 
 #endif
