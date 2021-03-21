@@ -119,7 +119,7 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         }
     }
 			break;
-        case _TOGGLE:
+        case _ADJUST:
              if (index == 0) {
         if (clockwise) {
             tap_code(KC_MS_RIGHT);
