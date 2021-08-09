@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x8844
 #define DEVICE_VER      0x0002
 #define MANUFACTURER    Evan Sailer
-#define PRODUCT         Minivan
+#define PRODUCT         Minisub
 
 /* key matrix size */
 #define MATRIX_ROWS 4
